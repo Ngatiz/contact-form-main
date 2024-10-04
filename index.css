@@ -1,0 +1,16 @@
+.parent{
+   background-color: aqua;
+   display: flex;
+}
+
+
+.child{
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+    /* text-align: center; */
+    align-content: center;
+   }
+  
