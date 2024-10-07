@@ -1,5 +1,4 @@
 .parent{
-   background-color: aqua;
    display: flex;
 }
 
@@ -13,4 +12,4 @@
     /* text-align: center; */
     align-content: center;
    }
-  
+  .submit{ color: white;}

@@ -13,6 +13,7 @@
     .submit { background-color: green; }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    .form { align-items: center;}
 
   </style>
   <link rel="stylesheet" href="index.css">
@@ -21,24 +22,33 @@
   <h1>Contact Us</h1>
 
   <!-- this is the start of my form -->
-  <form action="" class="">
-    <div class="main">
-      <div>
+  <form action="" class="form">
+    <div class="main" style="display: flex;">
+      <div class="section">
           <label for="firstname">First Name</label> <br>
-          <input type="text" name="firstname" id=""> 
-          <label for="lastname">Last Name</label>
-          <input type="text" name="last-name" id=""> <br><br>
+          <input type="text" name="firstname" id="">
+      </div>    
+      <div class="section" style="margin-left: 10px;">   
+          <label for="lastname">Last Name</label><br>
+          <input type="text" name="last-name" id=""><br><br>
       </div>
+    </div>  
       <label for="emailaddress">Email Address</label> <br>
-      <input type="email" name="emailaddress" id=""> <br><br>
-      <div>
-          <label for="querytype">Query Type</label> <br>
-          <input type="button" value="General Enquiry">
-          <input type="button" value="Support Request" > <br><br>
+      <input type="email" name="emailaddress" id="" style="width: 345px;"> <br><br>
+      <label for="querytype">Query Type</label><br>
+<div class="parent" style="display: flex;">
+      <div class="child" >
+        <input type="radio" name="inquiry" id="">
+        <label for="">General Enquiry</label>
       </div>
+      <div class="child">
+        <input type="radio" name="inquiry" id="">
+        <label for="">Support Request</label>
+      </div>
+</div>
       <div>
-          <label for="Message">Message</label>
-          <input type="text" name="" id=""> <br><br>
+          <label for="Message">Message</label><br>
+          <input type="text" name="" id="" style="height: 150px; width: 345px;"> <br><br>
       </div>
       <div>
           <input type="checkbox" name="cb" id="cb" style="float: left;">
@@ -51,7 +61,20 @@
   </form> <br><br><br><br><br><br>
 
 
-  <form action="">
+  <div class="container" style="display: flex;">
+    <div class="section">
+      <label for="firstname">First Name</label> <br>
+      <input type="text" name="firstname" id="">  <br> <br>
+    </div>
+    <div class="section" style="margin-left: 10px;">
+      <label for="lastname">Last Name</label> <br>
+      <input type="text" name="last-name" id="">
+    </div>
+
+</div> 
+
+
+  <!-- <form action="">
     <div class="main" >
       <label for="name">First Name</label>
       <input type="text" name="name" id="">
@@ -71,17 +94,15 @@
       <div class="child" >
         <input type="radio" name="inquiry" id="">
         <label for="">General Enquiry</label>
-        
-      </div>
+        </div>
       <div class="child">
         <input type="radio" name="inquiry" id="">
         <label for="">Support Request</label>
-        
       </div>
-     </div>
+    </div>
 
     
-  </form>
+  </form> -->
 
 <!--  
   Contact Us
